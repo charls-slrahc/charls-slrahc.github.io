@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics</title>
+    <link rel="stylesheet" href="/css/Academics.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="/images/stanford-logo.webp" alt="Stanford Logo" />
+      <h1><a href="../index.html">Stanford University</a></h1>
+    </div>
+    <nav class="header-right">
+      <ul>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/pages/Academics.html">Academics</a></li>
+        <li><a href="/pages/Admission.html">Admissions</a></li>
+        <li><a href="#">Campus Life</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="title">Academics</div>
+    <p class="text-container1">
+      Explore Stanford's diverse academic programs, world-class faculty, and innovative research opportunities. Our commitment to excellence prepares students for leadership and impact in a rapidly changing world.
+    </p>
+    <div class="image">
+      <img src="/images/AcademicsPage-front.jpg" alt="Academics Main Image">
+    </div>
+  </div>
+
+  <div class="side-by-side-container">
+    <div class="image-section">
+      <img src="/images/AcademicsPage-ClockTower.jpg" alt="Academics Clock Tower" />
+    </div>
+    <div class="content-section">
+      <div class="red-box">
+        <span class="red-box-text">Undergraduate Programs</span>
+        <button class="arrow-btn" id="arrow-btn-0" onclick="showInfo(0)">&gt;</button>
+      </div>
+      <div class="red-box">
+        <span class="red-box-text">Graduate Studies</span>
+        <button class="arrow-btn" id="arrow-btn-1" onclick="showInfo(1)">&gt;</button>
+      </div>
+      <div class="red-box">
+        <span class="red-box-text">Research Opportunities</span>
+        <button class="arrow-btn" id="arrow-btn-2" onclick="showInfo(2)">&gt;</button>
+      </div>
+      <div id="infoBox" class="info-box">
+        <button class="close-btn" onclick="closeInfo()">&#10005;</button>
+        <span id="infoText"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="/javascript/AcademicScript.js"></script>
+</body>
+</html>

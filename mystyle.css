@@ -11,10 +11,16 @@ body {
 header {
   background-color: #8c1515;
   color: white;
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
+  border-bottom: 4px solid #ffdada;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-left {
@@ -24,13 +30,19 @@ header {
 }
 
 .header-left img {
-  width: 50px;
+  width: 70px;
   height: auto;
+}
+
+h1 a {
+  color:white;
+  text-decoration: none;
 }
 
 .header-left h1 {
   font-size: 20px;
   line-height: 1.2;
+  font-weight: lighter;
 }
 
 .header-right ul {
@@ -39,11 +51,16 @@ header {
   gap: 25px;
 }
 
+.header-right ul :hover{
+  color: #8c1515;
+  background-color: aqua;
+}
+
 .header-right a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .header-right a:hover {
@@ -61,7 +78,7 @@ nav ul {
   gap: 30px;
 }
 
-nav a {
+nav a { 
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -74,10 +91,10 @@ nav a:hover {
 }
 
 .hero {
-  background-image: url('stanford-bg.png');
+  background-image: url('/images/stanford-bg.jpg');
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,7 +102,19 @@ nav a:hover {
 
 .hero-text h2 {
   color: white;
-  font-size: 64px;
+  font-size: 100px;
   font-weight: bold;
   text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 }
+
+.footer {
+  padding: 40px 0;
+  background-color: #8c1515;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4c4d;
+}
+

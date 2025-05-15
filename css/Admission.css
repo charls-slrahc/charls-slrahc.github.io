@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+}
+
+h1 a {
+  color:white;
+  text-decoration: none;
+}
+
+header {
+  background-color: #8c1515;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 4px solid #ffdada;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;   
+  z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-left img {
+  width: 70px;
+  height: auto;
+}
+
+.header-left h1 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: lighter;
+}
+
+.header-right ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header-right a:hover {
+  color: #ffdada;
+}
+
+nav.header-right {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffdada;
+}
+
+.header-right a:hover {
+  color: #ffdada;
+}
+
+nav.header-right {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffdada;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 95%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35); /* Cool shadow effect */
+  transition: transform 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.05); /* Enlarge effect on hover */
+}
+
+.text-container1 {
+    text-align: center;
+    padding: 4%;
+    max-width: 1500px;
+    margin: 0 auto;  /* Centering the text */
+}
+
+p {
+    line-height: 1.6;  /* Improved readability */
+    color: #333;  /* Text color */
+    font-size: 35px;  /* Font size */
+}
+

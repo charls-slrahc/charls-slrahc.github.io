@@ -13,7 +13,7 @@ h1, h2, h3, .title, .text-section1 h2, .text-section2 h2 {
 }
 
 h1 a {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
@@ -28,14 +28,14 @@ header {
   border-bottom: 4px solid #ffdada;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   position: sticky;
-  top: 0;   
+  top: 0;
   z-index: 1000;
 }
 
 .header-left {
   display: flex;
   align-items: center;
-  gap: 12px; /* Match About page spacing */
+  gap: 12px;
 }
 
 .header-left img {
@@ -64,7 +64,6 @@ header {
 .header-right a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
   font-size: 20px;
 }
 
@@ -86,8 +85,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   transition: color 0.3s;
 }
 
@@ -95,7 +93,6 @@ nav a:hover {
   color: #ffdada;
 }
 
-/* Overlay Section */
 .overlay {
   background: linear-gradient(rgba(60, 0, 0, 0.7), rgba(60, 0, 0, 0.7)),
     url('/images/AdmissionPage-Cover.jpg') no-repeat center center;
@@ -109,7 +106,6 @@ nav a:hover {
   padding: 40px;
 }
 
-/* General Content */
 .content {
   max-width: 1000px;
   margin: 0 auto;
@@ -144,7 +140,6 @@ h1 {
   font-style: italic;
 }
 
-/* Undergraduate Section */
 .undergrad-wrapper {
   padding: 40px 0;
   background: none;
@@ -223,7 +218,6 @@ h1 {
   right: -40px;
 }
 
-/* Graduate Section */
 .grad-wrapper {
   padding: 40px 0;
   background: none;
@@ -302,7 +296,6 @@ h1 {
   line-height: 1.7;
 }
 
-/* Financial Aid Section */
 .financial-aid-section {
   text-align: center;
   padding: 60px 20px;
@@ -319,7 +312,6 @@ h1 {
   margin-bottom: 60px;
 }
 
-/* Stats Section */
 .stats-section {
   display: flex;
   justify-content: center;
@@ -360,7 +352,6 @@ h1 {
   font-weight: normal;
 }
 
-/* Buttons */
 .button-container {
   text-align: center;
 }
@@ -416,7 +407,6 @@ h1 {
   font-weight: 600;
 }
 
-/* Footer */
 .footer {
   padding: 40px 0;
   background-color: #8c1515;
@@ -484,7 +474,6 @@ h1 {
   color: white;
 }
 
-/* Responsive Styles */
 @media (max-width: 1200px) {
   .undergrad-container,
   .grad-container {

@@ -13,14 +13,13 @@ h1, h2, h3, .title, .text-section1 h2, .text-section2 h2 {
 }
 
 h1 a {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
 header {
   background-color: #8c1515;
   color: white;
-  text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,14 +27,14 @@ header {
   border-bottom: 4px solid #ffdada;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   position: sticky;
-  top: 0;   
+  top: 0;
   z-index: 1000;
 }
 
 .header-left {
   display: flex;
   align-items: center;
-  gap: 12px; /* Match About page spacing */
+  gap: 12px;
 }
 
 .header-left img {
@@ -64,7 +63,6 @@ header {
 .header-right a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
   font-size: 20px;
 }
 
@@ -83,11 +81,10 @@ nav ul {
   gap: 30px;
 }
 
-nav a {
+nav a { 
   text-decoration: none;
   color: white;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   transition: color 0.3s;
 }
 
@@ -99,41 +96,33 @@ nav a:hover {
   text-align: center;
 }
 
-.title {
-  padding-top: 3%;
-  padding-bottom: 2%;
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
 .image {
   width: 100%;
   height: auto;
 }
 
 .text-container1 {
-    text-align: center;
-    padding: 1%;
-    max-width: 1400px;
-    margin: 0 auto;  /* Centering the text */
+  text-align: center;
+  padding: 1%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 p {
-    line-height: 1.6;  /* Improved readability */
-    color: #333;  /* Text color */
-    font-size: 35px;  /* Font size */
+  line-height: 1.6;
+  color: #333;
+  font-size: 35px;
 }
 
 .Leftside,
 .Rightside {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px;
-    background-color: lightgray;
-    max-width: 1300px;
-    margin: 90px auto;      /* Increased margin for more gap between grey boxes */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: lightgray;
+  max-width: 1300px;
+  margin: 90px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .text-section1 {
@@ -142,16 +131,20 @@ p {
   padding: 20px;
 }
 
-.text-section1 h2 {
+.text-section1 h2,
+.text-section2 h2 {
   font-size: 27px;
   font-weight: bold;
   color: #000000;
   margin-bottom: 20px;
+  text-align: center;
+  margin-top: 0;
 }
 
-.text-section1 p {
+.text-section1 p,
+.text-section2 p {
+  text-align: center !important;
   font-size: 19px;
-  text-align: center;
   line-height: 1.6;
   color: #333333;
   margin-bottom: 30px;
@@ -182,45 +175,46 @@ p {
   border-radius: 8px;
   object-fit: contain;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  
 }
 
 .image-section2 {
-    flex: 1 1 50%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1 1 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .image-section2 img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 8px;
-    object-fit: contain;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .text-section2 {
-    font-family: Arial, Helvetica, sans-serif;
-    flex: 1 1 50%;
-    padding: 20px;
-}
-.text-section2 h2 {
-    font-size: 27px;
-    font-weight: bold;
-    color: #000000;
-    margin-bottom: 20px;
-}
-.text-section2 p {
-    font-size: 19px;
-    text-align: left; /* Changed from center to left */
-    line-height: 1.6;
-    color: #333333;
-    margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 1 1 50%;
+  padding: 20px;
 }
 
-/* Footer */
+.text-section2 h2 {
+  font-size: 27px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.text-section2 p {
+  font-size: 19px;
+  text-align: left;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
 .footer {
   padding: 40px 0;
   background-color: #8c1515;
@@ -243,7 +237,7 @@ p {
   text-align: center;
   border-radius: 50%;
   margin: 0 8px;
-  opacity: 1; /* Make icons fully white */
+  opacity: 1;
   background: transparent;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }

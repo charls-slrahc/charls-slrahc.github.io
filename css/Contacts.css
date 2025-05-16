@@ -13,7 +13,7 @@ h1, h2, h3, .title, .text-section1 h2, .text-section2 h2 {
 }
 
 h1 a {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
@@ -28,14 +28,14 @@ header {
   border-bottom: 4px solid #ffdada;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   position: sticky;
-  top: 0;   
+  top: 0;
   z-index: 1000;
 }
 
 .header-left {
   display: flex;
   align-items: center;
-  gap: 12px; /* Match About page spacing */
+  gap: 12px;
 }
 
 .header-left img {
@@ -64,7 +64,6 @@ header {
 .header-right a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
   font-size: 20px;
 }
 
@@ -86,8 +85,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   transition: color 0.3s;
 }
 
@@ -104,8 +102,8 @@ nav a:hover {
 }
 
 .info-box {
-  width: 320px;      /* Increased from 270px */
-  padding: 60px;     /* Increased from 50px */
+  width: 320px;
+  padding: 60px;
   border: 1px solid #ccc;
   text-align: center;
 }
@@ -173,7 +171,7 @@ nav a:hover {
   text-align: center;
   border-radius: 50%;
   margin: 0 8px;
-  opacity: 1; /* Make icons fully white */
+  opacity: 1;
   background: transparent;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }

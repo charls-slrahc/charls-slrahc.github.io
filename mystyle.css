@@ -26,12 +26,24 @@ header {
 .header-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px; /* Match About page spacing */
 }
 
 .header-left img {
   width: 70px;
   height: auto;
+  display: block;
+}
+
+.header-left h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
 }
 
 h1 a {
@@ -39,21 +51,10 @@ h1 a {
   text-decoration: none;
 }
 
-.header-left h1 {
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: lighter;
-}
-
 .header-right ul {
   list-style: none;
   display: flex;
   gap: 25px;
-}
-
-.header-right ul :hover{
-  color: #8c1515;
-  background-color: aqua;
 }
 
 .header-right a {
@@ -115,6 +116,61 @@ nav a:hover {
 .footer .social {
   text-align: center;
   padding-bottom: 25px;
-  color: #4b4c4d;
+  color: white;
 }
 
+.footer .social a {
+  font-size: 24px;
+  color: white;
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 1; /* Make icons fully white */
+  background: transparent;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+  color: #8c1515;
+  background: white;
+  border-color: white;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+  color: white;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
